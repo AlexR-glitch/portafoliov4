@@ -1,0 +1,180 @@
+@import 'variables';
+
+
+
+.menu{
+    height: 70px;
+    width: 100%;
+    background: $colorPrimario;
+    color: $contraste1Primario;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    .Linklogo{
+        width: 45%;
+        height: 100%;
+        text-decoration: none;
+        padding-left: 0rem;
+        display: flex;
+        align-items: center;
+        z-index: 99;
+        .logo{
+            height: 40px;
+            padding-left: 1.5rem;
+            }
+        }
+    .enlaces{
+        right: 0;
+        width: 55%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding-right: .5rem;
+        list-style: none;
+        margin: 0;
+        li{
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: $colorPrimario;
+            .link{
+                width: fit-content;
+                text-decoration: none;
+                color: $contraste1Primario;
+                font-weight: bold;
+                font-family: $tipoPrincipal;
+                font-size: 1.8rem;
+                height: 3.1rem;
+                margin: 0;
+                padding: .5rem;
+            }
+            .localizador{
+                width: 0;
+                height: 3px;
+                background: rgba(0, 0, 0, 0);
+                border-radius:5px ;
+                transition: .4s ease-in;
+                margin: 0 5px ;
+            }
+        }
+        :hover{
+                .link{
+                    color: $colorManifiesto;
+                }
+                .localizador{
+                    width: 100%;
+                    height: 3px;
+                    background: $contraste2Primerio;
+                    border-radius:5px ;
+                }
+        }
+        
+    .active{
+        .link{
+            color: $colorManifiesto;
+        }
+        .localizador{
+            width: 100%;
+            height: 3px;
+            background: #dc3545;
+            border-radius:5px ;
+        }
+    }
+    }
+    .navToggler{
+        cursor: pointer;
+        display: none;
+        height: auto;
+        padding: .9rem;
+        .fa-bars{
+            width: fit-content;
+            padding: 1rem;
+            margin: .2rem;
+            color: $contraste1Primario;
+            font-size: 1.5rem;
+        }
+        .fa-times{
+            width: fit-content;
+            padding: 1rem;
+            margin: .2rem;
+            color: $contraste1Primario;
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu{
+        align-items: center;
+        .Linklogo{
+            z-index: 99;
+            .logo{
+                height: 30px;
+                padding-left: .2rem;
+            }
+        }
+        .navToggler{
+            display:block;
+            z-index: 90;
+        }
+        .enlaces{
+            position: absolute;
+            top: 70px;
+            right: 0;
+            width: 100%;
+            height: 0;
+            flex-direction: column;
+            transform: translatex(2000px);
+            opacity: 0;
+            transition: .9s ease-in;
+            z-index: 90;
+            li{
+                width: 100%;
+                height: fit-content ;
+                .link{
+                    width: 100%;
+                    height: 4rem;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+        }
+        .active{
+            .localizador{
+                width: 200x;
+                height: 3px;
+                background: $contraste2Primerio;
+                border-radius:5px ;
+            }
+        }
+    }
+        /*navbar activo */
+        .navActivo{
+            height: 500px;
+            width: 100%;
+            padding: 2rem;
+            transform: translatex(0);
+            background: $colorPrimario;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 90;
+            opacity: 1;
+            .active{
+                background: $colorPrimario;
+                height: 50px;
+                opacity: 1;
+            }
+            :hover{
+                .localizador{
+                    width: 200px;
+                }
+            }
+        }
+    }
+    }
