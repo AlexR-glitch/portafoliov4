@@ -1,0 +1,23 @@
+.back{
+    position: fixed;
+    top: 80px;
+    left: 10px;
+    background: #333333;
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    opacity: .5;
+    transition: opacity .2s ease-out;
+        .fa-solid{
+            font-size: 2rem;
+            color: #FFF;
+        }
+}
+:hover{
+    opacity: 1;
+}

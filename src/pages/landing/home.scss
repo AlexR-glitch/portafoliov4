@@ -1,0 +1,188 @@
+@import 'variables';
+
+.cabeza{
+    height: 100vh;
+    width: 100%;
+    background: url(./BgPrincipal.png) !important;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    .img{
+        width: auto;
+        height: 100%;
+        background: none !important;
+    }
+    .encabezado{
+        padding: .5rem .8rem .5rem .8rem;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        border-style: solid;
+        border-color: $colorManifiesto;
+        background: none;
+        transition: background 1s ease;
+        .title{
+            width: 100%;
+            color: #fff;
+            text-align: center;
+        }
+        .sub-title{
+            width: 100%;
+            background: $colorPrimario;
+            color:$contraste1Primario;
+            padding: .7rem;
+        }
+    }
+        :hover{
+                background: $colorPrimario;
+                border-style: none;
+                .title{
+                    color: $contraste1Primario;
+                    background: none;
+                    box-shadow: none;
+                }
+                .sub-title{
+                    background: $blancoPrim;
+                    color: $contraste2Primerio;
+                    box-shadow: none;
+                }
+        }
+    }
+
+    .Racional{
+        height: fit-content;
+        width: 100%;
+        background: #000;
+        background-size: cover;
+        background-position: right center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .about{
+            height: 100%;
+            width: 60%;
+            padding: 4rem 3rem;
+            background: $colorManifiesto;
+            clip-path: polygon(0 0, 100% 0, 78% 100%, 0% 100%);
+            .titular{
+                width: 70%;
+                font-size: 3rem;
+                text-transform: uppercase;
+                font-family:  $tipoPrincipal;
+                color: $blancoPrim;
+            }
+            .cuerpo{
+                width: 75%;
+                font-size: 1.2rem;
+                color: $colorPrimario;
+                font-family: $tipoSecundario;
+                font-weight: bolder;
+                strong{
+                    font-size: 1.3rem;
+                    color: $blancoPrim;
+                }
+            }
+        }
+        .logoF{
+            width: auto;
+            height: 40% ;
+        }
+    }
+
+@media screen and (max-width:768px) {
+
+    .cabeza{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .img{
+            z-index: 60;
+            position: absolute;
+        }
+        .encabezado{
+            z-index: 70;
+            .title{
+                font-size: 3rem;
+            }
+            .sub-title{
+                font-size: 3rem;
+            }
+        }
+        }
+    .Racional{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        .about{
+            width: 100%;
+            clip-path: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: $colorPrimario;
+            .titular{
+                width: 100%;
+                text-align: center;
+                font-size: 3.2rem;
+                color: $colorManifiesto;
+            }
+            .cuerpo{
+                width: 90%;
+                text-align: justify;
+                font-size: 2rem;
+                color:$blancoPrim;
+                strong{
+                    font-size: 2.2rem;
+                    color: $colorManifiesto;
+                }
+            }
+        }
+        .logoF{
+            display:none ;
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    .cabeza{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .img{
+            z-index: 60;
+            position: absolute;
+        }
+        .encabezado{
+            z-index: 70;
+            .title{
+                font-size: 2rem;
+            }
+            .sub-title{
+                font-size: 1.4rem;
+            }
+        }
+        }
+        
+    .Racional{
+        .about{
+            padding: 1.5rem;
+            .titular{
+                font-size: 2.5rem;
+            }
+            .cuerpo{
+                font-size: 1.5rem;
+                strong{
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}

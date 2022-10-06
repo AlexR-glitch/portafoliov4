@@ -1,0 +1,272 @@
+@import 'variables';
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.portafolio{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../landing/BgPrincipal.png);
+    padding: 2rem;
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        padding-top: 80px;
+        justify-content: center;
+        align-items: center;
+        .cabezera{
+            font-family: $tipoPrincipal;
+            font-size: 4rem;
+            color: $blancoPrim;
+            background: $colorPrimario;
+            padding: 1rem 3rem;
+            border-radius: 1rem;
+        }
+        .contexto{
+            width: 100%;
+            font-family: $tipoSecundario;
+            font-weight: bolder;
+            font-size: 1.2rem;
+            text-align: justify;
+            color: $colorPrimario;
+            border-radius: 1rem;
+            background: rgba(255, 255, 255, 0.664) ;
+            padding: 1rem 3rem;
+        }
+}
+
+.portafolioContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    .items{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: .5rem;
+        .enlace{
+            width: 30%;
+            height: 600px;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 1rem;
+            text-decoration: none;
+            .img1{
+                width: 100%;
+                height: 100%;
+                background: url(https://images.pexels.com/photos/13348105/pexels-photo-13348105.jpeg);
+                background-size: cover;
+                background-position: center;
+                .PortafolioItem{
+                    background: $colorPrimario;
+                    height: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    filter: opacity(0);
+                    transition: height .5s ease-in;
+                    .section{
+                        font-family: $tipoPrincipal;
+                        color: $blancoPrim;
+                        font-size: 4rem;
+                        transform: translateX(500px);
+                        transition: transform .7s ease-in;
+                        margin-bottom: 0;
+                        height: fit-content;
+                    }
+                }
+            }
+        }
+            .img2{
+                width: 100%;
+                height: 100%;
+                background: url(https://images.pexels.com/photos/7598018/pexels-photo-7598018.jpeg);
+                background-size: cover;
+                background-position: center;
+                .PortafolioItem{
+                    background: $colorPrimario;
+                    height: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    filter: opacity(0);
+                    transition: height .5s ease-in;
+                    .section{
+                        height: fit-content;
+                        font-family: $tipoPrincipal;
+                        color: $blancoPrim;
+                        font-size: 4rem;
+                        transform: translateX(500px);
+                        transition: transform .7s ease-in;
+                        margin-bottom: 0;
+                        height: fit-content;
+                    }
+                }
+            }
+            .img3{
+                width: 100%;
+                height: 100%;
+                background: url(https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg);
+                background-size: cover;
+                background-position: center;
+                .PortafolioItem{
+                    background: $colorPrimario;
+                    height: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    filter: opacity(0);
+                    transition: height .5s ease-in;
+                    .section{
+                        font-family: $tipoPrincipal;
+                        color: $blancoPrim;
+                        height: fit-content;
+                        font-size: 4rem;
+                        transform: translateX(500px);
+                        transition: transform .7s ease-in;
+                        margin-bottom: 0;
+                        height: fit-content;
+                    }
+                }
+            }
+            :hover{
+                .img1{
+                    .PortafolioItem{
+                        height: 100%;
+                        filter: opacity(.7);
+                        .section{
+                            transform: translateX(0);
+                        }
+                    }
+                }
+                .img2{
+                    .PortafolioItem{
+                        height: 100%;
+                        filter: opacity(.7);
+                        .section{
+                            transform: translateX(0);
+                        }
+                    }
+                }
+                .img3{
+                    .PortafolioItem{
+                        height: 100%;
+                        filter: opacity(.7);
+                        .section{
+                            transform: translateX(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .portafolio{
+        height: fit-content;
+        .titulo{
+            padding-top: 90px;
+            .cabezera{
+                padding: 1rem 2rem;
+            }
+            .contexto{
+                padding: 1rem 2rem;
+                width: 88%;
+            }
+    }
+    
+    .portafolioContainer{
+        .items{
+            height: 100%;
+            flex-direction: column;
+            .enlace{
+                width: 90%;
+                height: 225px;
+                margin: .6rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    .portafolio{
+        height: fit-content;
+        .titulo{
+            padding-top: 90px;
+            .cabezera{
+                padding: 1rem 2rem;
+                margin-bottom: 1.5rem;
+            }
+            .contexto{
+                padding: 1rem 2rem;
+                width: 95%;
+                font-size: 1.5rem;
+            }
+    }
+    
+    .portafolioContainer{
+        .items{
+            height: 100%;
+            flex-direction: column;
+            .enlace{
+                width: 90%;
+                height: 150px;
+                margin: .6rem;
+                .img1{
+                    .PortafolioItem{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0;
+                        padding: 0;
+                        .section{
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+                .img2{
+                    .PortafolioItem{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0;
+                        padding: 0;
+                        .section{
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+                .img3{
+                    .PortafolioItem{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0;
+                        padding: 0;
+                        .section{
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,172 @@
+@import 'variables';
+
+.CCuerpo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorManifiesto;
+    .CCTexto{
+        width: 100%;
+        height: 100%;
+        padding: 6rem 3rem 3rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .CTitular{
+            font-family: $tipoPrincipal;
+            font-size: 3.5rem;
+            color: $blancoPrim;
+            width: 90%;
+        }
+        .CCCuerpo{
+            font-family: $tipoSecundario;
+            font-size: 1.2rem;
+            font-weight: bold;
+            width: 90%;
+            text-align: justify;
+            strong{
+                //color: $blancoPrim;
+                font-weight: bolder;
+                font-style: italic;
+                font-size: 1.2rem;
+                text-decoration-line: underline;
+                text-decoration-thickness: 2px;
+            }
+        }
+    }
+}
+
+.container_stats{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .stats{
+        width: 40%;
+        height: 400px;
+        opacity: none;
+        background: $colorPrimario;
+        padding: .8rem;
+        border-radius: .9rem;
+        filter: opacity(.8);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .card{
+            width: 100%;
+            background: none;
+            border-style: none;
+            color:$blancoPrim;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            .card-title{
+                font-family: $tipoPrincipal;
+                font-size: 1.7rem;
+                padding: 0 1rem;
+                text-align: center;
+                margin: 0;
+            }
+            .skills{
+                padding: .2rem 0;
+                width: 90%;
+            }
+            .label{
+                font-size: .8rem;
+            }
+            .skillYears{
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .CCuerpo{
+        height: 100vh;
+        padding-top: 70px;
+        .CCTexto{
+            padding: 3rem 1.5rem 1.5rem 1.5rem;
+            display: flex;
+            .CTitular{
+                font-size: 4.5rem;
+            }
+            .CCCuerpo{
+                font-size: 1.5rem;
+                strong{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    
+    .container_stats{
+        .stats{
+            width: 45%;
+            height: 425px;
+            padding: .2rem;
+            .card{
+                .card-title{
+                    font-size: 2rem;
+                }
+                .label{
+                    font-size: 1.2rem;
+                }
+                .skillYears{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    .CCuerpo{
+        height: auto;
+        padding-top: 70px;
+        .CCTexto{
+            padding: 1.5rem .9rem .9rem .9rem;
+            .CTitular{
+                font-size: 4.5rem;
+            }
+            .CCCuerpo{
+                font-size: 1.2rem;
+                strong{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+    
+    .container_stats{
+        flex-direction: column;
+        height: fit-content;
+        .stats{
+            width: 90%;
+            height: 425px;
+            padding: .2rem;
+            margin-bottom: 1rem;
+            .card{
+                .card-title{
+                    font-size: 2rem;
+                }
+                .label{
+                    font-size: 1.2rem;
+                }
+                .skillYears{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
