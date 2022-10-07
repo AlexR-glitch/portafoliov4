@@ -12,9 +12,9 @@ export default function contacto() {
                 <div className="contenedorContacto">
                     <img src={logo} alt="logo" />
                     <div className='contenedorFormulario'>
-                        <form name='contacto v1' method='post' netlify onSubmit='submit'>
+                        <form name='contact' method='post' netlify onSubmit='submit'>
 
-                            <input type='hidden' name='form-name' value='contacto v1' />
+                            <input type='hidden' name='form-name' value='contacts' />
 
                             <div>
                                 <label>Nombre <br/>
