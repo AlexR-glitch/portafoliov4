@@ -1,8 +1,5 @@
 import logo from '../landing/logoF.png'
 
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-
 import './contacto.scss'
 
 export default function contacto() {
@@ -15,29 +12,30 @@ export default function contacto() {
                 <div className="contenedorContacto">
                     <img src={logo} alt="logo" />
                     <div className='contenedorFormulario'>
-                        <Form data-neftlify='true' className='enrutador' method='POST'>
-                            <Form.Group className='mb-3 CF' controlId="formBasicEmail">
-                                <Form.Control type='email' placeholder='Correo' />
-                                <Form.Text className='text-muted'>
-                                    No compartire tu correo con nadie.
-                                </Form.Text>
-                            </Form.Group>
+                        <form name='contacto v1' method='post' data-netlify='true' onSubmit='submit'>
+                            <input type='hidden' name='form-name' value='contacto v1' />
 
-                            <Form.Group className='mb-3 CF' controlId="formBasicName">
-                                <Form.Control type='Text' placeholder='Nombre' />
-                                <Form.Text className='text-muted'>
-                                    ¿Como debo llamarte?
-                                </Form.Text>
-                            </Form.Group>
+                            <div>
+                                <label>Nombre <br/>
+                                    <input type='text' name='nombre' />
+                                </label>
+                            </div>
+                            
+                            <div>
+                                <label>Correo <br/>
+                                    <input type='email' name='email' />
+                                </label>
+                            </div>
+                            
 
-                            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                <Form.Label className='text-light'>Escribe tu mensaje aqui</Form.Label>
-                                <Form.Control as="textarea" rows={7} />
-                            </Form.Group>
-                            <Button variant="success" type="submit" className='w-auto px-3 py-2 mx-auto'>
-                                Enviar
-                            </Button>
-                        </Form>
+                            <div>
+                                <label>Comentarios <br/>
+                                    <textarea name='comentarios'></textarea>
+                                </label>
+                            </div>
+
+                            <button type='submit'> Enviar</button>
+                        </form>
                     </div>
                 </div>
                 <div className="RRSS">
