@@ -93,7 +93,7 @@ export default function Diseño(){
     return(
         <>
         <div className={view ? "view Show" : "view"}>
-            <img src={showCont}/>
+            <img src={showCont} alt='imagen'/>
             <i class="fa-solid fa-circle-xmark" onClick={()=> setview(false)}></i>
         </div>
 
