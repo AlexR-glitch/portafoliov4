@@ -15,7 +15,7 @@ export default function contacto() {
                 <div className="contenedorContacto">
                     <img src={logo} />
                     <div className='contenedorFormulario'>
-                        <Form data-neftlify='true' className='enrutador'>
+                        <Form data-neftlify='true' className='enrutador' method='POST'>
                             <Form.Group className='mb-3 CF' controlId="formBasicEmail">
                                 <Form.Control type='email' placeholder='Correo' />
                                 <Form.Text className='text-muted'>
