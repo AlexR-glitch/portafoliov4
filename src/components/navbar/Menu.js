@@ -20,7 +20,7 @@ export default function Menu(){
         <>
                     <nav className='menu'>
                 <Link to="/" className='Linklogo'>
-                    <img src={logo} className='logo'></img>
+                    <img src={logo} className='logo' alt="logo"></img>
                 </Link>
                 <ul className={active}>
                     <li className={localizacion[1] === "" ? "active" : ""}>

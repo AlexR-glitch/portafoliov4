@@ -13,7 +13,7 @@ export default function contacto() {
                     <h1 className="contactoTitular">Puedes escribirme</h1>
                 </div>
                 <div className="contenedorContacto">
-                    <img src={logo} />
+                    <img src={logo} alt="logo" />
                     <div className='contenedorFormulario'>
                         <Form data-neftlify='true' className='enrutador' method='POST'>
                             <Form.Group className='mb-3 CF' controlId="formBasicEmail">
@@ -41,17 +41,14 @@ export default function contacto() {
                     </div>
                 </div>
                 <div className="RRSS">
-                    <a href="#" className="RRSSlinks">
+                    <a href="https://www.facebook.com/rene.alexander.rivera.hernandz" className="RRSSlinks">
                         <i class="fa-brands fa-facebook-f" />
                     </a>
-                    <a href="#" className="RRSSlinks">
+                    <a href="https://www.instagram.com/alexxander_rivera/" className="RRSSlinks">
                         <i class="fa-brands fa-instagram" />
                     </a>
-                    <a href="#" className="RRSSlinks">
-                        <i class="fa-regular fa-envelope" />
-                    </a>
                 </div>
-            </div>
+            </div> 
         </>
     )
 }
