@@ -2,8 +2,6 @@ import './about.scss';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
 export default function About(){
-    const year = new Date().getFullYear();
-    const age = year - 1997;
     return (
         <>
             <div className="CCuerpo">
