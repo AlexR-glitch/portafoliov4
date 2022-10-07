@@ -18,6 +18,10 @@ import Fotografia from "./pages/fotografia/Fotografia";
 
 import Diseño from "./pages/diseño/Diseño";
 
+import Web from './pages/portaweb/Web';
+
+import Contacto from './pages/contact/Contacto';
+
 export default function App(){
   return(
     <>
@@ -29,6 +33,8 @@ export default function App(){
           <Route path="/portafolio" element={<Portafolio />} />
           <Route path="/fotografia" element={<Fotografia />} />
           <Route path="/diseno" element={<Diseño />} />
+          <Route path="/web" element={<Web />} />
+          <Route path="/contacto" element={<Contacto />} />
         </Routes>
       <Footer />
     </Router>

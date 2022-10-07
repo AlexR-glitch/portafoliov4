@@ -1,0 +1,67 @@
+@import 'variables';
+
+.ContenedorWeb{
+    width: 100%;
+    height: auto;
+    background: $colorManifiesto;
+    padding: 1rem 2rem;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .ContenedorSeccion{
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: .5rem 0;
+        border-radius: 1rem;
+        background: $colorPrimario;
+        padding: 1rem 0;
+        .descripcion{
+            width: 60%;
+            height: auto;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin-left: .5rem;
+            margin-right: .5rem;
+            .tituloSeccion{
+                font-family: $tipoPrincipal;
+                text-align: center;
+                font-size: 1.5rem;
+                color: $colorManifiesto;
+            }
+            .CuerpoSeccion{
+                font-family: $tipoSecundario;
+                color: $blancoPrim;
+                font-size: 1rem;
+                text-align: justify;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .ContenedorWeb{
+        .ContenedorSeccion{
+            width: 100%;
+            flex-direction: column;
+            .descripcion{
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                .tituloSeccion{
+                    text-align: center;
+                }
+                .CuerpoSeccion{
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
