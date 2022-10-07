@@ -105,7 +105,7 @@ export default function Fotografia(){
     return(
         <>
         <div className={model? "model open" : "model"}>
-            <img src={showImg}/>
+            <img src={showImg} alt='imagen'/>
             <i class="fa-solid fa-circle-xmark" onClick={() => setmodel(false)}></i>
         </div>
         
@@ -114,7 +114,7 @@ export default function Fotografia(){
             {data.map((item,index) => {
                 return(
                     <div className="fotos" key={index} onClick={()=> getImg(item.imgSrc)}>
-                        <img src={item.imgSrc} className='imgs'/>
+                        <img src={item.imgSrc} className='imgs' alt='imagen'/>
                     </div>
                 )
             })}
