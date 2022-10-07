@@ -42,30 +42,37 @@ export default function Diseño(){
         {
             id: 7,
             VSrc: 'https://www.youtube.com/embed/zSNJaWjri0w',
+            titulo: 'Practica 1'
         },
         {
             id: 8,
             VSrc: 'https://www.youtube.com/embed/wfn22K51LNM',
+            titulo:'practica 5'
         },
         {
             id: 9,
             VSrc: 'https://www.youtube.com/embed/DLC1K-9utsc',
+            titulo:'Practica 4'
         },
         {
             id: 10,
             VSrc: 'https://www.youtube.com/embed/0duA4dvVJCw',
+            titulo:'Practica 2'
         },
         {
             id: 11,
             VSrc: 'https://www.youtube.com/embed/FUhyawslSLE',
+            titulo:'Parcial 1 Video'
         },
         {
             id: 12,
             VSrc: 'https://www.youtube.com/embed/6KY73ontL6M',
+            titulo:'Spot 3 Parcial DGDV'
         },
         {
             id: 13,
             VSrc:'https://www.youtube.com/embed/To9Cp-ggu4E',
+            titulo:'Spot Parcial 1 Video'
         },
     ]
 
@@ -101,7 +108,7 @@ export default function Diseño(){
             {imgdata.map((item,index) => {
                 return(
                     <div className='contenido' key={index} onClick={()=> getCont(item.ISrc)}>
-                        <img src={item.ISrc} className='content'/>
+                        <img src={item.ISrc} className='content' alt='imagen'/>
                     </div>
                 )
             })}
@@ -109,7 +116,7 @@ export default function Diseño(){
             {Video.map((item, index) => {
                 return (
                     <div className='containerV' key={index} onClick={()=> getVideo(item.VSrc)} >
-                        <iframe src={item.VSrc +"?controls=0"} className='video'/>
+                        <iframe src={item.VSrc +"?controls=0"} title={item.titulo} className='video'/>
                     </div>
                 )
             })}
