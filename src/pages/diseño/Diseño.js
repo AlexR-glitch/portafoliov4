@@ -97,8 +97,8 @@ export default function Diseño(){
             <i class="fa-solid fa-circle-xmark" onClick={()=> setview(false)}></i>
         </div>
 
-        <div className={vision ? "vision visible" : "vision"}>
-            <iframe src={showVideo + "?autoplay=1"} allow='autoplay;' allowFullScreen></iframe>
+        <div className={vision ? "vision visible" : "vision"}>  
+        <iframe src={showVideo + "?autoplay=1"} allow='autoplay;' title={Video.titulo} allowFullScreen></iframe>
             <i class="fa-solid fa-circle-xmark" onClick={()=> setvision(false)}></i>
         </div>
 
