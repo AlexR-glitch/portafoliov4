@@ -1,6 +1,6 @@
 import Before from '../img/before.svg';
 import Next from '../img/next.svg';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import './slide.scss'
 
 import web1 from '../img/viajes/viajes1.png';
@@ -10,7 +10,6 @@ import web3 from '../img/viajes/viajes3.png';
 export default function Slide2() {
 
     const slideshow = useRef(null);
-    const intervaloSlideshow = useRef(null);
 
     //boton de Next
     const next = () => {
@@ -63,22 +62,22 @@ export default function Slide2() {
             <div className='SlideContainerMain'>
                 <div className='SlideShow' ref={slideshow}>
                     <div className='Slide'>
-                        <img src={web1} className='img' />
+                        <img src={web1} className='img' alt='imagen'/>
                     </div>
                     <div className='Slide'>
-                        <img src={web2} className='img' />
+                        <img src={web2} className='img' alt='imagen'/>
                     </div>
                     <div className='Slide'>
-                        <img src={web3} className='img' />
+                        <img src={web3} className='img' alt='imagen'/>
                     </div>
                 </div>
 
                 <div className='Controles'>
                     <button className='btn Before' onClick={before}>
-                        <img src={Before} className='arrow' />
+                        <img src={Before} className='arrow' alt='imagen'/>
                     </button>
                     <button className='btn Next' onClick={next}>
-                        <img src={Next} className='arrow' />
+                        <img src={Next} className='arrow' alt='imagen'/>
                     </button>
                 </div>
             </div>

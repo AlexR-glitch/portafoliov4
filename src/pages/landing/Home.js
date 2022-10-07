@@ -26,7 +26,7 @@ export default function Home() {
     return (
         <>
             <header className="Container cabeza">
-                <img data-aos="fade-left" src={perfil} className="img"></img>
+                <img data-aos="fade-left" src={perfil} className="img" alt='imagen'></img>
                 <div className="Container encabezado" data-aos="fade-right">
                     <h1 className="title" data-aos="fade-up">René Rivera</h1>
                     <h2 className="sub-title" data-aos="fade-up">Diseñador gráfico web</h2>
@@ -39,7 +39,7 @@ export default function Home() {
                         El concepto detrás de este portafolio es <strong>ENCODE</strong> que significa <strong>CODIFICACIÓN</strong> nace a partir de que en la carrera que estudio está enfocada a el diseño de páginas web y en la edición de contenido multimedia, este concepto está relacionado tanto a la programación web que es la combinación de lenguajes de programación y también está relacionado con los códecs en los que se pueden trabajar proyectos audiovisuales, este concepto se verá reflejado en el uso de los lenguajes de programación y mediante el uso de materiales multimedia para que la apariencia visual del portafolio refleje la profesionalidad de mi trabajo.
                     </p>
                 </div>
-                <img className="logoF" src={logoForm} data-aos="zoom-in"></img>
+                <img className="logoF" src={logoForm} data-aos="zoom-in" alt='logo'></img>
             </div>
         </>
     )
