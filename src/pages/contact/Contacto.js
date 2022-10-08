@@ -1,8 +1,9 @@
 import logo from '../landing/logoF.png'
-
 import './contacto.scss'
 
 export default function contacto() {
+
+
     return (
         <>
             <div className="contacto">
@@ -14,17 +15,17 @@ export default function contacto() {
                     <div className='contenedorFormulario'>
                         <form name='contacto' method='POST' netlify onSubmit='submit' action='/'>
 
-                            <input type='hidden' name='form-name' value='contacto' />
+                            <input type='hidden' name='form-name' value='contacto' required/>
 
                             <div>
                                 <label>Nombre <br/>
-                                    <input type='text' name='name' />
+                                    <input type='text' name='name' required/>
                                 </label>
                             </div>
                             
                             <div>
                                 <label>Correo <br/>
-                                    <input type='email' name='email' />
+                                    <input type='email' name='email' required/>
                                 </label>
                             </div>
                             
