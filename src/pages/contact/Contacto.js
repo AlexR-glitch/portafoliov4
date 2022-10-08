@@ -12,7 +12,7 @@ export default function contacto() {
                 <div className="contenedorContacto">
                     <img src={logo} alt="logo" />
                     <div className='contenedorFormulario'>
-                        <form name='contacto' method='POST' netlify onSubmit='submit'>
+                        <form name='contacto' method='POST' netlify onSubmit='submit' action='/gracias' data-netlify-recaptcha="true">
 
                             <input type='hidden' name='form-name' value='contacto' />
 
