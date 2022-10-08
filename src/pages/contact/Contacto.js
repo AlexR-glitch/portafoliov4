@@ -15,7 +15,7 @@ export default function contacto() {
                     <div className='contenedorFormulario'>
                         <form name='contacto' method='POST' netlify onSubmit='submit' action='/'>
 
-                            <input type='hidden' name='form-name' value='contacto' required/>
+                            <input type='hidden' name='form-name' value='contacto'/>
 
                             <div>
                                 <label>Nombre <br/>
@@ -32,7 +32,7 @@ export default function contacto() {
 
                             <div>
                                 <label>Comentarios <br/>
-                                    <textarea name='message'></textarea>
+                                    <textarea name='message' required ></textarea>
                                 </label>
                             </div>
 
