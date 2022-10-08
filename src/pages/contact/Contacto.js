@@ -18,7 +18,7 @@ export default function contacto() {
 
                             <div>
                                 <label>Nombre <br/>
-                                    <input type='text' name='nombre' />
+                                    <input type='text' name='name' />
                                 </label>
                             </div>
                             
@@ -31,7 +31,7 @@ export default function contacto() {
 
                             <div>
                                 <label>Comentarios <br/>
-                                    <textarea name='comentarios'></textarea>
+                                    <textarea name='message'></textarea>
                                 </label>
                             </div>
 
