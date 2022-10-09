@@ -1,19 +1,19 @@
 @import 'variables';    
 .contacto{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: url(../landing/BgPrincipal.png);
     background-size: cover;
     background-position: center;
     padding: 1rem 2rem;
-    padding-top: 90px;
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     .contenedorContacto{
         width: 100%;
-        height: fit-content;
+        height: 100%;
         border-radius: 1.5rem;
         background: $colorPrimario;
         filter: opacity(.8);
@@ -24,11 +24,54 @@
         align-items: center;
         img{
             width: 350px;
-            height: 350px;
+            height: auto;
         }
         .contenedorFormulario{
             width: 40%;
             height: auto;
+            form{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                div{
+                    width: 100%;
+                    margin: .4rem 0;
+                    label{
+                        font-family: $tipoPrincipal;
+                        color: $blancoPrim;
+                        font-size: 1.5rem;
+                        width: 100%;
+                        .areaInput{
+                            width: 100%;
+                            margin: 0;
+                            font-family: $tipoSecundario;
+                            border-radius: .3rem;
+                            border-style: none;
+                            font-size: 1rem;
+                        }
+                        .text{
+                            height: 150px;
+                            resize: none;
+                            padding: .4rem .5rem;
+                        }
+                        .input{
+                            height: 2rem;
+                            padding: .4rem .5rem;
+                        }
+                    }
+                }
+                button{
+                    width: fit-content;
+                    padding: .4rem 2rem;
+                    border-style: none;
+                    border-radius: .5rem;
+                    background: $colorManifiesto;
+                    color: $blancoPrim;
+                    font-family: $tipoSecundario;
+                    font-size: 1rem;
+                }
+            }
         }
     }
     .contactoCabeza{
@@ -40,36 +83,14 @@
         justify-content: center;
         align-items: center;
         border-radius: .9rem;
-        padding: 1rem 2rem;
+        padding: .9rem 2rem;
+        margin: 1rem;
         .contactoTitular{
             height: fit-content;
             padding: 0;
             margin: 0;
             font-family: $tipoPrincipal;
-            font-size: 2.5rem;
-        }
-    }
-    .RRSS{
-        width: 40%;
-        height: fit-content;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        .RRSSlinks{
-            width: 5rem;
-            height: 5rem;
-            display: flex;
-            border-radius: 4rem;
-            background: $colorPrimario;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            padding: 1rem;
-            i{
-                font-size: 2.1rem;
-                color: $blancoPrim;
-            }
+            font-size: 2rem;
         }
     }
 }
@@ -95,16 +116,6 @@
                 font-size: 1.5rem;
             }
         }
-        .RRSS{
-            width: 60%;
-            .RRSSlinks{
-                width: 4rem;
-                height: 4rem;
-                i{
-                    font-size: 1.8rem;
-                }
-            }
-        }
     }
 }
 
@@ -122,12 +133,6 @@
         .contactoCabeza{
             .contactoTitular{
                 font-size: 1.4rem;
-            }
-        }
-        .RRSS{
-            width: 90%;
-            .RRSSlinks{
-                padding: 1.5rem;
             }
         }
     }

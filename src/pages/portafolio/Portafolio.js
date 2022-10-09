@@ -6,7 +6,7 @@ export default function Portafolio() {
             <div className="portafolio">
                 <div className='titulo'>
                     <h1 className='cabezera'>Portafolio</h1>
-                    <p className='contexto'>En esta seccion podras encontrar las areas en la que podras encontra algunos de mis trabajos academicos.</p>
+                    <p className='contexto'>En esta sección podrás encontrar algunos de los trabajos que he realizado a lo largo de mi carrera universitaria, al igual que algunos trabajos o proyectos personales.</p>
                 </div>
                 <div className="portafolioContainer">
                     <div className='items'>

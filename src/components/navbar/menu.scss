@@ -1,7 +1,5 @@
 @import 'variables';
 
-
-
 .menu{
     height: 70px;
     width: 100%;
@@ -141,22 +139,23 @@
                     width: 100%;
                     height: 4rem;
                     display: flex;
+                    font-size: 1.4rem;
                     justify-content: space-around;
                     align-items: center;
                 }
         }
         .active{
             .localizador{
-                width: 200x;
-                height: 3px;
-                background: $contraste2Primerio;
+                width: 200px;
+                height: 5px;
+                background: #dc3545;
                 border-radius:5px ;
             }
         }
     }
         /*navbar activo */
         .navActivo{
-            height: 500px;
+            height: 400px;
             width: 100%;
             padding: 2rem;
             transform: translatex(0);
@@ -167,7 +166,7 @@
             opacity: 1;
             .active{
                 background: $colorPrimario;
-                height: 50px;
+                height: 70px;
                 opacity: 1;
             }
             :hover{

@@ -27,6 +27,7 @@
         align-items: flex-start;
         border-style: solid;
         border-color: $colorManifiesto;
+        border-radius: .3rem;
         background: none;
         transition: background 1s ease;
         .title{
@@ -37,6 +38,7 @@
         .sub-title{
             width: 100%;
             background: $colorPrimario;
+            border-radius: .4rem;
             color:$contraste1Primario;
             padding: .7rem;
         }
@@ -166,7 +168,7 @@
                 font-size: 2rem;
             }
             .sub-title{
-                font-size: 1.4rem;
+                font-size: 1.5rem;
             }
         }
         }
@@ -175,12 +177,13 @@
         .about{
             padding: 1.5rem;
             .titular{
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
             .cuerpo{
-                font-size: 1.5rem;
+                font-size: 1rem;
+                letter-spacing: 0.0050rem;
                 strong{
-                    font-size: 1.7rem;
+                    font-size: 1rem;
                 }
             }
         }

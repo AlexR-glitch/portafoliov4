@@ -12,6 +12,7 @@
     align-items: center;
     text-decoration: none;
     opacity: .5;
+    z-index: 1000;
     transition: opacity .2s ease-out;
         .fa-solid{
             font-size: 2rem;

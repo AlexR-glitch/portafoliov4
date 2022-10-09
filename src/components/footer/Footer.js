@@ -6,9 +6,9 @@ export default function Footer(){
         <>
         <div className="footer">
             <div className="ContEnlaces">
-                <div className="derechos">
+                <p className="derechos">
                     Derechos reservados {Year} | <strong> Portafolio profesional y Academico </strong> | René Rivera
-                </div>
+                </p>
             </div>
         </div>
         </>
