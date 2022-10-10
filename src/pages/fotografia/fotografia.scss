@@ -37,7 +37,8 @@
     top: 0;
     left: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     background: $colorPrimario;
     transition: opacity .4s ease, visibility .4s ease, transform .4s ease-in-out;
@@ -48,27 +49,41 @@
     z-index: 999;
     img{
         width: auto;
-        max-width: 100%;
+        max-width: 60%;
         height: auto;
         max-height: 100%;
         display: block;
         line-height: 0;
         box-sizing: border-box;
-        padding: 20px 40px 20px;
-        margin: 0 auto;
+        padding: 1rem;
+        margin: .5rem;
     }
 }
 .model.open{
     visibility: visible;
     opacity: 1;
     transform: scale(1);
+    padding: 1rem;
     .fa-solid{
-        position: fixed;
+        position:absolute;
         top: 10px;
         right: 10px;
         font-size: 3rem;
         padding: 5px;
         color: $blancoPrim;
+        cursor: pointer;
+    }
+    .descrito{
+        width: 40%;
+        padding: 1rem;
+        margin: .5rem;
+        font-size: 1.2rem;
+        background: $blancoPrim;
+        border-radius: .5rem;
+        text-align: justify;
+        color: $colorPrimario;
+        font-family: $tipoSecundario;
+        font-weight: 900;
     }
 }
 
