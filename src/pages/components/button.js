@@ -5,7 +5,7 @@ export default function Boton(){
     return(
         <>
         <Link to= '/portafolio' className="back">
-                <i class="fa-solid fa-arrow-left"></i>
+                <i className="fa-solid fa-arrow-left"></i>
         </Link>
         </>
     )

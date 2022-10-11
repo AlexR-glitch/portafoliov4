@@ -109,15 +109,15 @@ export default function Diseño(){
 
     return(
         <>
-        <div className={view ? "view Show" : "view"}>
+        <div className={view ? "view Show" : "view"} onKeyDown={handleKeydown}>
             <img src={showCont} alt='imagen'/>
-            <i class="fa-solid fa-circle-xmark" onClick={()=> setview(false)}></i>
+            <i className="fa-solid fa-circle-xmark" onClick={()=> setview(false)}></i>
             <p className='textDesc'>{texto}</p>
         </div>
 
         <div className={vision ? "vision visible" : "vision"}>  
         <iframe src={showVideo + "?autoplay=1"} allow='autoplay;' title={Video.titulo} allowFullScreen></iframe>
-            <i class="fa-solid fa-circle-xmark" onClick={()=> setvision(false)}></i>
+            <i className="fa-solid fa-circle-xmark" onClick={()=> setvision(false)}></i>
             <p className='textDesc'>{text}</p>
         </div>
 

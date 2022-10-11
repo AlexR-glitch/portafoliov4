@@ -41,7 +41,7 @@ export default function Menu(){
                     </li>
                 </ul>
                 <div onClick={navToggler} className='navToggler'>
-                    <i class="fas fa-bars"></i>
+                    <i className="fas fa-bars"></i>
                 </div>
             </nav>
         </>
