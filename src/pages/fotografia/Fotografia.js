@@ -126,7 +126,7 @@ export default function Fotografia(){
             <p className="descrito">{text}</p>
         </div>
         
-        <div className="containerGalery">
+        <div className="containerGalery">   
             <Boton className='Boton'/>
             {data.map((item,index) => {
                 return(

@@ -40,7 +40,7 @@ export default function Diseño(){
         {
             id: 6,
             ISrc: contIMG6,
-            desc:'Proyecto academico en el cual se creo una marca fictisia la cual ofreceria cursos en alguna tematica de nuestro interes, para la cual se crearian una serie de artes publicitarias para la red social de Instagram.',
+            descp:'Proyecto academico en el cual se creo una marca fictisia la cual ofreceria cursos en alguna tematica de nuestro interes, para la cual se crearian una serie de artes publicitarias para la red social de Instagram.',
         },
     ]
 
@@ -109,7 +109,7 @@ export default function Diseño(){
 
     return(
         <>
-        <div className={view ? "view Show" : "view"} onKeyDown={handleKeydown}>
+        <div className={view ? "view Show" : "view"}>
             <img src={showCont} alt='imagen'/>
             <i className="fa-solid fa-circle-xmark" onClick={()=> setview(false)}></i>
             <p className='textDesc'>{texto}</p>
