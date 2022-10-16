@@ -109,7 +109,7 @@ export default function Diseño(){
 
     return(
         <>
-        <div className={view ? "view Show" : "view"} onKeyDown={handleKeydown}>
+        <div className={view ? "view Show" : "view"}>
             <img src={showCont} alt='imagen'/>
             <i className="fa-solid fa-circle-xmark" onClick={()=> setview(false)}></i>
             <p className='textDesc'>{texto}</p>
