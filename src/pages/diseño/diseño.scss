@@ -14,7 +14,7 @@
     .contenido{
         height: 350px;
         width: 350px;
-        margin: .5rem;
+        padding: 1.2rem 0 0 0 ;
         cursor: pointer;
         -webkit-transition: all 350ms ease;
         transition: all 350ms ease;
@@ -22,11 +22,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
         .content{
-            height: 350px;
-            max-height: 400px;
+            height: 100%;
             width: auto;
+            aspect-ratio: 1/1;
         }
     }
     .containerV{
@@ -64,11 +63,10 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background: #333333b0;
+    background: $colorPrimario;
     transition: opacity .4s ease, visibility .4s ease, transform .4s ease-in-out;
     visibility: hidden;
     opacity: 0;
-    backdrop-filter: blur(6px);
     transform: scale(0);
     overflow: hidden;
     z-index: 999;
@@ -80,7 +78,6 @@
         display: block;
         line-height: 0;
         box-sizing: border-box;
-        border-radius: 1.5rem;
         padding: 1rem;
         margin: .5rem;
     }

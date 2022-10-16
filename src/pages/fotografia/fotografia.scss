@@ -40,11 +40,10 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background: #333333b0;
+    background: $colorPrimario;
     transition: opacity .4s ease, visibility .4s ease, transform .4s ease-in-out;
     visibility: hidden;
     opacity: 0;
-    backdrop-filter: blur(6px);
     transform: scale(0);
     overflow: hidden;
     z-index: 999;
