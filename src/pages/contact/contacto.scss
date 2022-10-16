@@ -61,6 +61,17 @@
                         }
                     }
                 }
+
+                .error{
+                    width: 100%;
+                    color: $blancoPrim;
+                    display: flex;
+                    justify-content: center;
+                    span{
+                        padding-right: .5rem;
+                    }
+                }
+
                 button{
                     width: fit-content;
                     padding: .4rem 2rem;
