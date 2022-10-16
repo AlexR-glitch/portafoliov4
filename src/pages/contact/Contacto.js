@@ -67,26 +67,26 @@ export default function contacto() {
 
                             <div>
                                 <label>Nombre <br/>
-                                    <input type='text' name='name' required className='areaInput input' placeholder='¿Cómo debo llamarte?' id='Nombre' onChange={capturaDatos} value={formulario.name}/>
+                                    <input type='text' name='name' className='areaInput input' placeholder='¿Cómo debo llamarte?' id='Nombre' onChange={capturaDatos} value={formulario.name}/>
                                 </label>
                             </div>
                             
                             <div>
                                 <label>Correo <br/>
-                                    <input type='email' name='email' required className='areaInput input' placeholder='Esta información queda entre tú y yo' id='Correo' onChange={capturaDatos} value={formulario.email}/>
+                                    <input type='email' name='email' className='areaInput input' placeholder='Esta información queda entre tú y yo' id='Correo' onChange={capturaDatos} value={formulario.email}/>
                                 </label>
                             </div>
                             
 
                             <div>
                                 <label>Comentarios <br/>
-                                    <textarea name='message' required className='areaInput text' placeholder='Dime que opinas…' id='Mensaje' onChange={capturaDatos} value={formulario.message}></textarea>
+                                    <textarea name='message' className='areaInput text' placeholder='Dime que opinas…' id='Mensaje' onChange={capturaDatos} value={formulario.message}></textarea>
                                 </label>
                             </div>
                             
                             {error.estado && 
                             <div className='error'>
-                                <span>Error:</span>  *Mensaje de ejemplo*
+                                <span>Error:</span>  {error.mensaje}
                             </div>}
 
                             <button type='submit'>Enviar</button>
