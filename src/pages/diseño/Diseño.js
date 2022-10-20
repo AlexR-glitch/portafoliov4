@@ -9,8 +9,30 @@ import contIMG5 from './img/6.png';
 import contIMG6 from './img/11.png';
 
 import { useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Diseño(){
+
+    AOS.init({
+        disable: false,
+        startEvent: 'DOMContentLoaded',
+        initClassName: 'aos-init',
+        animatedClassName: 'aos-animate',
+        useClassNames: false,
+        disableMutationObserver: false,
+        debounceDelay: 50,
+        throttleDelay: 99,
+
+        offset: 200,
+        delay: 40,
+        duration: 300,
+        easing: 'ease',
+        once: false,
+        mirror: true,
+        anchorPlacement: 'top-bottom',
+    });
+
     const imgdata =[
         {
             id: 1,
@@ -126,7 +148,7 @@ export default function Diseño(){
             <Boton className='Boton'/>
             {imgdata.map((item,index) => {
                 return(
-                    <div className='contenido' key={index} onClick={()=> getCont(item.ISrc,item.descp)}>
+                    <div className='contenido' key={index} onClick={()=> getCont(item.ISrc,item.descp)} data-aos="zoom-out-up">
                         <img src={item.ISrc} className='content' alt='imagen'/>
                         <p hidden>{item.descp}</p>
                     </div>
@@ -135,7 +157,7 @@ export default function Diseño(){
             
             {Video.map((item, index) => {
                 return (
-                    <div className='containerV' key={index} onClick={()=> getVideo(item.VSrc,item.descripc)} >
+                    <div className='containerV' key={index} onClick={()=> getVideo(item.VSrc,item.descripc)} data-aos="zoom-out-up">
                         <iframe src={item.VSrc +"?controls=0"} title={item.titulo} className='video'/>
                         <p hidden>{item.descripc}</p>
                     </div>

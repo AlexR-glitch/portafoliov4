@@ -7,12 +7,36 @@ import Slide2 from './components/Slide2';
 import Slide3 from './components/Slide3';
 import Slide4 from './components/Slide4';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export default function Web() {
+
+    AOS.init({
+        disable: false,
+        startEvent: 'DOMContentLoaded',
+        initClassName: 'aos-init',
+        animatedClassName: 'aos-animate',
+        useClassNames: false,
+        disableMutationObserver: false,
+        debounceDelay: 50,
+        throttleDelay: 99,
+
+        offset: 200,
+        delay: 40,
+        duration: 300,
+        easing: 'ease',
+        once: false,
+        mirror: true,
+        anchorPlacement: 'top-center',
+    });
+
+
     return (
         <>
         <Boton />
         <div className='ContenedorWeb'>
-            <div className='ContenedorSeccion'>
+            <div className='ContenedorSeccion' data-aos="fade-up-right">
                 <Slide1  className='sliderCuerpo'/>
                 <div className='descripcion'>
                     <h1 className='tituloSeccion'>Pagina de abogados</h1>
@@ -20,7 +44,7 @@ export default function Web() {
                 </div>
             </div>
             
-            <div className='ContenedorSeccion'>
+            <div className='ContenedorSeccion' data-aos="fade-up-right">
                 <Slide2  className='sliderCuerpo'/>
                 <div className='descripcion'>
                     <h1 className='tituloSeccion'>Agencia de viajes</h1>
@@ -28,7 +52,7 @@ export default function Web() {
                 </div>
             </div>
 
-            <div className='ContenedorSeccion'>
+            <div className='ContenedorSeccion' data-aos="fade-up-right">
                 <Slide3  className='sliderCuerpo'/>
                 <div className='descripcion'>
                     <h1 className='tituloSeccion'>Web Maker</h1>
@@ -36,7 +60,7 @@ export default function Web() {
                 </div>
             </div>
 
-            <div className='ContenedorSeccion'>
+            <div className='ContenedorSeccion' data-aos="fade-up-right">
                 <Slide4 className='sliderCuerpo'/>
                 <div className='descripcion'>
                     <h1 className='tituloSeccion'>Tienda de zapatos</h1>

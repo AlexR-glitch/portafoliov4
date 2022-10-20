@@ -22,10 +22,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 1rem 0 0 0;
         .content{
-            height: 100%;
+            height: auto;
+            max-height: 132%;
             width: auto;
-            aspect-ratio: 1/1;
         }
     }
     .containerV{

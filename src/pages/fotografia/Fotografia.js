@@ -20,8 +20,30 @@ import img16 from './img/16.JPG';
 import img17 from './img/17.JPG';
 
 import { useState } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Fotografia(){
+
+    AOS.init({
+        disable: false,
+        startEvent: 'DOMContentLoaded',
+        initClassName: 'aos-init',
+        animatedClassName: 'aos-animate',
+        useClassNames: false,
+        disableMutationObserver: false,
+        debounceDelay: 50,
+        throttleDelay: 99,
+
+        offset: 200,
+        delay: 40,
+        duration: 300,
+        easing: 'ease',
+        once: false,
+        mirror: true,
+        anchorPlacement: 'top-center',
+    });
+
     const data =[
         {
             id: 1,
@@ -130,7 +152,7 @@ export default function Fotografia(){
             <Boton className='Boton'/>
             {data.map((item,index) => {
                 return(
-                    <div className="fotos" key={index} onClick={()=> getImg(item.imgSrc,item.desc)}>
+                    <div className="fotos" key={index} onClick={()=> getImg(item.imgSrc,item.desc)} data-aos="zoom-out-up">
                         <img src={item.imgSrc} className='imgs' alt='imagen'/>
                         <p hidden>{item.desc}</p>
                     </div>

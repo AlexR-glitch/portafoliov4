@@ -3,8 +3,8 @@
     top: 80px;
     left: 10px;
     background: #333333;
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     border-radius: 100px;
     padding: 1rem;
     display: flex;
@@ -15,7 +15,7 @@
     z-index: 100;
     transition: opacity .2s ease-out;
         .fa-solid{
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: #FFF;
         }
 }

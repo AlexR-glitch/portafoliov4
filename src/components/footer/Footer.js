@@ -1,6 +1,7 @@
 import "./footer.scss";
 
 export default function Footer(){
+
     const Year= new Date().getFullYear();
     return(
         <>

@@ -1,19 +1,40 @@
 import './about.scss';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function About(){
+    AOS.init({
+        disable: false,
+        startEvent: 'DOMContentLoaded',
+        initClassName: 'aos-init',
+        animatedClassName: 'aos-animate',
+        useClassNames: false,
+        disableMutationObserver: false,
+        debounceDelay: 50,
+        throttleDelay: 99,
+
+        offset: 200,
+        delay: 40,
+        duration: 300,
+        easing: 'ease',
+        once: false,
+        mirror: true,
+        anchorPlacement: 'top-bottom',
+    });
+
     return (
         <>
             <div className="CCuerpo">
                 <div className="CCTexto">
-                    <h1 className="CTitular">Sobre mí</h1>
-                    <p className="CCCuerpo">
+                    <h1 className="CTitular" data-aos="fade-right">Sobre mí</h1>
+                    <p className="CCCuerpo" data-aos="fade-right">
                         Mi nombre es <strong>René Rivera</strong> soy estudiante de ultimo ciclo de la carrera de <strong>Diseño grafico web multimedia</strong>, durante mis estudios universitarios me he interesado por ciertas areas profecionales como la edicion de <strong>fotografias</strong>, <strong>videos</strong> con fines ludicos o profesionales, asi como en la <strong>programacion de sitios web</strong>, haciendo uso de lenguajes de programación y tecnologías como React Js.<br/><br/>
 
                         Mis areas de <strong>conocimiento</strong> y <strong>experiencia</strong> son:<br/><br/>
                     </p>
                     <div className='container_stats'>
-                        <section className="stats">
+                        <section className="stats" data-aos="fade-right">
                             <article className="card">
                                 <h2 className='card-title' >Programas de edicion</h2>
                                 <h6 className='label'>Años de experiencia</h6>
@@ -54,7 +75,7 @@ export default function About(){
                             </article>
                         </section>
 
-                        <section className="stats">
+                        <section className="stats" data-aos="fade-left">
                             <article className="card">
                                 <h2 className='card-title' >Lenguajes y tecnologías de programación</h2>
                                 <h6 className='label'>Años de experiencia</h6>
