@@ -110,7 +110,7 @@ export default function Contacto() {
                                     <span>Error:</span>  {error.mensaje}
                                 </div>}
 
-                            <button type='submit'>Enviar</button>
+                            <button type='submit' onSubmit='submit'>Enviar</button>
                         </form>
                     </div>
                 </div>
