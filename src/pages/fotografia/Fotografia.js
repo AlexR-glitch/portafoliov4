@@ -16,14 +16,14 @@ import img12 from './img/12.webp';
 import img13 from './img/13.webp';
 import img14 from './img/14.webp';
 import img15 from './img/15.webp';
-import img16 from './img/16.webp';   
+import img16 from './img/16.webp';
 import img17 from './img/17.webp';
 
 import { useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-export default function Fotografia(){
+export default function Fotografia() {
 
     AOS.init({
         disable: false,
@@ -41,10 +41,10 @@ export default function Fotografia(){
         easing: 'ease',
         once: false,
         mirror: true,
-        anchorPlacement: 'top-center',
+        anchorPlacement: 'top-top',  
     });
 
-    const data =[
+    const data = [
         {
             id: 1,
             imgSrc: img1,
@@ -132,33 +132,40 @@ export default function Fotografia(){
         },
     ]
     const [model, setmodel] = useState(false);
-    const[showImg, setShowImg] = useState('');
+    const [showImg, setShowImg] = useState('');
     const [text, settext] = useState('');
-    const getImg = (imgSrc,desc) =>{
+    const getImg = (imgSrc, desc) => {
         setShowImg(imgSrc);
         setmodel(true);
         settext(desc);
     }
 
-    return(
+    return (
         <>
-        <div className={model? "model open" : "model"}>
-            <img src={showImg} alt='imagen'/>
-            <i class="fa-solid fa-circle-xmark" onClick={() => setmodel(false)}></i>
-            <p className="descrito">{text}</p>
-        </div>
-        
-        <div className="containerGalery">
-            <Boton className='Boton'/>
-            {data.map((item,index) => {
-                return(
-                    <div className="fotos" key={index} onClick={()=> getImg(item.imgSrc,item.desc)}>
-                        <img src={item.imgSrc} className='imgs' alt='imagen' data-aos="fade-up"/>
-                        <p hidden>{item.desc}</p>
-                    </div>
-                )
-            })}
-        </div>
+            <div className="fotografias">
+                <div className='titulo' data-aos="zoom-in">
+                    <h1 className='cabezera'>Fotografía</h1>
+                    <p className='contexto'>En esta pagina se recopilan algunas de las fotografías que he tomado a lo largo de estos años, ya sea como parte de mis trabajos academicos o como parte de mi hobby.</p>
+                </div>
+
+                <div className={model ? "model open" : "model"}>
+                    <img src={showImg} alt='imagen' />
+                    <i class="fa-solid fa-circle-xmark" onClick={() => setmodel(false)}></i>
+                    <p className="descrito">{text}</p>
+                </div>
+
+                <div className="containerGalery">
+                    <Boton className='Boton' />
+                    {data.map((item, index) => {
+                        return (
+                            <div className="fotos" key={index} onClick={() => getImg(item.imgSrc, item.desc)}>
+                                <img src={item.imgSrc} className='imgs' alt='imagen' data-aos="fade-down" />
+                                <p hidden>{item.desc}</p>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
         </>
     )
 }
