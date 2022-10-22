@@ -36,7 +36,7 @@ export default function Web() {
         <>
         <Boton />
         <div className='ContenedorWeb'>
-            <div className='ContenedorSeccion' data-aos="fade-up-right">
+            <div className='ContenedorSeccion' data-aos="fade-up">
                 <Slide1  className='sliderCuerpo'/>
                 <div className='descripcion'>
                     <h1 className='tituloSeccion'>Pagina de abogados</h1>
@@ -44,7 +44,7 @@ export default function Web() {
                 </div>
             </div>
             
-            <div className='ContenedorSeccion' data-aos="fade-up-right">
+            <div className='ContenedorSeccion' data-aos="fade-up">
                 <Slide2  className='sliderCuerpo'/>
                 <div className='descripcion'>
                     <h1 className='tituloSeccion'>Agencia de viajes</h1>
@@ -52,7 +52,7 @@ export default function Web() {
                 </div>
             </div>
 
-            <div className='ContenedorSeccion' data-aos="fade-up-right">
+            <div className='ContenedorSeccion' data-aos="fade-up">
                 <Slide3  className='sliderCuerpo'/>
                 <div className='descripcion'>
                     <h1 className='tituloSeccion'>Web Maker</h1>
@@ -60,7 +60,7 @@ export default function Web() {
                 </div>
             </div>
 
-            <div className='ContenedorSeccion' data-aos="fade-up-right">
+            <div className='ContenedorSeccion' data-aos="fade-up">
                 <Slide4 className='sliderCuerpo'/>
                 <div className='descripcion'>
                     <h1 className='tituloSeccion'>Tienda de zapatos</h1>

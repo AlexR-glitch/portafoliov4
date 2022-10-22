@@ -40,7 +40,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background: $colorPrimario;
+    background: $backdropcolor;
+    backdrop-filter: blur(6px);
     transition: opacity .4s ease, visibility .4s ease, transform .4s ease-in-out;
     visibility: hidden;
     opacity: 0;
@@ -49,14 +50,15 @@
     z-index: 999;
     img{
         width: auto;
-        max-width: 60%;
+        max-width: 50%;
         height: auto;
         max-height: 100%;
         display: block;
         line-height: 0;
         box-sizing: border-box;
-        padding: 1rem;
         margin: .5rem;
+        border-radius: .5rem;
+        box-shadow: $shadow .5rem .5rem .5rem;
     }
 }
 .model.open{

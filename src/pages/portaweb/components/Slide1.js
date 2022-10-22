@@ -3,9 +3,9 @@ import Next from '../img/next.svg';
 import {useRef } from 'react';
 import './slide.scss'
 
-import web1 from '../img/abogados/abogados1.png';
-import web2 from '../img/abogados/abogados2.png';
-import web3 from '../img/abogados/abogados3.png';
+import web1 from '../img/abogados/abogados1.webp';
+import web2 from '../img/abogados/abogados2.webp';
+import web3 from '../img/abogados/abogados3.webp';
 
 export default function Slide1() {
 

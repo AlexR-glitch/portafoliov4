@@ -1,12 +1,12 @@
 import Boton from '../components/button.js';
 import './diseño.scss';
 
-import contIMG1 from './img/1.png';
-import contIMG2 from './img/2.png';
-import contIMG3 from './img/3.png';
-import contIMG4 from './img/4.png';
-import contIMG5 from './img/6.png';
-import contIMG6 from './img/11.png';
+import contIMG1 from './img/1.webp';
+import contIMG2 from './img/2.webp';
+import contIMG3 from './img/3.webp';
+import contIMG4 from './img/4.webp';
+import contIMG5 from './img/6.webp';
+import contIMG6 from './img/11.webp';
 
 import { useState } from 'react';
 import AOS from 'aos';
@@ -148,8 +148,8 @@ export default function Diseño(){
             <Boton className='Boton'/>
             {imgdata.map((item,index) => {
                 return(
-                    <div className='contenido' key={index} onClick={()=> getCont(item.ISrc,item.descp)} data-aos="zoom-out-up">
-                        <img src={item.ISrc} className='content' alt='imagen'/>
+                    <div className='contenido' key={index} onClick={()=> getCont(item.ISrc,item.descp)}>
+                        <img src={item.ISrc} className='content' alt='imagen' data-aos="fade-up"/>
                         <p hidden>{item.descp}</p>
                     </div>
                 )
@@ -157,8 +157,8 @@ export default function Diseño(){
             
             {Video.map((item, index) => {
                 return (
-                    <div className='containerV' key={index} onClick={()=> getVideo(item.VSrc,item.descripc)} data-aos="zoom-out-up">
-                        <iframe src={item.VSrc +"?controls=0"} title={item.titulo} className='video'/>
+                    <div className='containerV' key={index} onClick={()=> getVideo(item.VSrc,item.descripc)}>
+                        <iframe src={item.VSrc +"?controls=0"} title={item.titulo} className='video' data-aos="fade-up"/>
                         <p hidden>{item.descripc}</p>
                     </div>
                 )

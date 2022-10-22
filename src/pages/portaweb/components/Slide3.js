@@ -3,9 +3,9 @@ import Next from '../img/next.svg';
 import { useRef } from 'react';
 import './slide.scss'
 
-import web1 from '../img/webmaker/maker1.png';
-import web2 from '../img/webmaker/maker2.png';
-import web3 from '../img/webmaker/maker3.png';
+import web1 from '../img/webmaker/maker1.webp';
+import web2 from '../img/webmaker/maker2.webp';
+import web3 from '../img/webmaker/maker3.webp';
 
 export default function Slide3() {
 

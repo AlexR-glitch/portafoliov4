@@ -1,23 +1,23 @@
 import Boton from "../components/button";
 import './fotografia.scss';
 
-import img1 from './img/1.JPG';
-import img2 from './img/2.JPG';
-import img3 from './img/3.JPG';
-import img4 from './img/4.JPG';
-import img5 from './img/5.JPG';
-import img6 from './img/6.jpg';
+import img1 from './img/1.webp';
+import img2 from './img/2.webp';
+import img3 from './img/3.webp';
+import img4 from './img/4.webp';
+import img5 from './img/5.webp';
+import img6 from './img/6.webp';
 import img7 from './img/7.jpg';
 import img8 from './img/8.jpg';
-import img9 from './img/9.JPG';
-import img10 from './img/10.JPG';
-import img11 from './img/11.JPG';
-import img12 from './img/12.JPG';
-import img13 from './img/13.JPG';
-import img14 from './img/14.JPG';
-import img15 from './img/15.JPG';
-import img16 from './img/16.JPG';   
-import img17 from './img/17.JPG';
+import img9 from './img/9.webp';
+import img10 from './img/10.webp';
+import img11 from './img/11.webp';
+import img12 from './img/12.webp';
+import img13 from './img/13.webp';
+import img14 from './img/14.webp';
+import img15 from './img/15.webp';
+import img16 from './img/16.webp';   
+import img17 from './img/17.webp';
 
 import { useState } from "react";
 import AOS from 'aos';
@@ -152,8 +152,8 @@ export default function Fotografia(){
             <Boton className='Boton'/>
             {data.map((item,index) => {
                 return(
-                    <div className="fotos" key={index} onClick={()=> getImg(item.imgSrc,item.desc)} data-aos="zoom-out-up">
-                        <img src={item.imgSrc} className='imgs' alt='imagen'/>
+                    <div className="fotos" key={index} onClick={()=> getImg(item.imgSrc,item.desc)}>
+                        <img src={item.imgSrc} className='imgs' alt='imagen' data-aos="fade-up"/>
                         <p hidden>{item.desc}</p>
                     </div>
                 )
