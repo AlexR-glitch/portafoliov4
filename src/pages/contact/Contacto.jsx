@@ -82,7 +82,7 @@ export default function Contacto() {
                 <div className="contenedorContacto"data-aos="fade-up">
                     <img src={logo} alt="logo" />
                     <div className='contenedorFormulario'>
-                        <form name='contacto' method='POST' netlify onSubmit={validarDatos} action='/'>
+                        <form name='contacto' method='POST' netlify onSubmit='submit' action='/'>
 
                             <input type='hidden' name='form-name' value='contacto'/>
 
@@ -110,7 +110,7 @@ export default function Contacto() {
                                     <span>Error:</span>  {error.mensaje}
                                 </div>}
 
-                            <button type='submit' onSubmit='submit'>Enviar</button>
+                            <button type='submit' onSubmit={validarDatos}>Enviar</button>
                         </form>
                     </div>
                 </div>
