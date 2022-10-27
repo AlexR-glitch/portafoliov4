@@ -1,3 +1,5 @@
+@import './variables';
+
 .SlideContainerMain{
     width: 90%;
     margin: 0;
@@ -74,6 +76,12 @@
                 width: 30px;
             }
         }
+        .Before{
+            left: -30px;
+        }
+        .Next{
+            right: -30px;
+        }
     }
     }
 }
@@ -93,6 +101,28 @@
             .arrow{
                 width: 25px;
             }
+        }
+        .Before{
+            left: 0;
+            top: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $blancoPrim;
+            width: 40px;
+            height: 40px;
+            border-radius: 3rem;
+        }
+        .Next{
+            right: 0px;
+            top: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $blancoPrim;
+            width: 40px;
+            height: 40px;
+            border-radius: 3rem;
         }
     }
     }

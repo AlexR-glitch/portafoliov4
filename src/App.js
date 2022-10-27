@@ -22,6 +22,8 @@ import Web from './pages/portaweb/Web';
 
 import Contacto from './pages/contact/Contacto';
 
+import Error from './pages/404/Error';
+
 export default function App(){
   return(
     <>
@@ -35,6 +37,7 @@ export default function App(){
           <Route path="/diseno" element={<Diseño />} />
           <Route path="/web" element={<Web />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path='*' element={<Error/>} />
         </Routes>
       <Footer />
     </Router>

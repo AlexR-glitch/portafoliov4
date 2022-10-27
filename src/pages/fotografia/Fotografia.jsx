@@ -41,7 +41,7 @@ export default function Fotografia() {
         easing: 'ease',
         once: false,
         mirror: true,
-        anchorPlacement: 'top-top',  
+        anchorPlacement: 'top-center',  
     });
 
     const data = [

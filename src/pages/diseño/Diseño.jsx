@@ -1,4 +1,4 @@
-import Boton from '../components/button.js';
+import Boton from '../components/button.jsx';
 import './diseño.scss';
 
 import contIMG1 from './img/1.webp';
@@ -30,7 +30,7 @@ export default function Diseño() {
         easing: 'ease',
         once: false,
         mirror: true,
-        anchorPlacement: 'top-bottom',
+        anchorPlacement: 'top-top',
     });
 
     const imgdata = [
@@ -62,7 +62,7 @@ export default function Diseño() {
         {
             id: 6,
             ISrc: contIMG6,
-            desc: 'Proyecto academico en el cual se creo una marca fictisia la cual ofreceria cursos en alguna tematica de nuestro interes, para la cual se crearian una serie de artes publicitarias para la red social de Instagram.',
+            descp: 'Proyecto academico en el cual se creo una marca fictisia la cual ofreceria cursos en alguna tematica de nuestro interes, para la cual se crearian una serie de artes publicitarias para la red social de Instagram.',
         },
     ]
 
@@ -145,7 +145,7 @@ export default function Diseño() {
                 </div>
 
                 <div className={vision ? "vision visible" : "vision"}>
-                    <iframe src={showVideo + "?autoplay=1"} allow='autoplay;' title={Video.titulo} allowFullScreen></iframe>
+                    <iframe src={showVideo + "?autoplay=1"} allow='autoplay;' title={Video.titulo} allowFullScreen width="640" height="360" frameBorder= "0"></iframe>
                     <i className="fa-solid fa-circle-xmark" onClick={() => setvision(false)}></i>
                     <p className='textDesc'>{text}</p>
                 </div>

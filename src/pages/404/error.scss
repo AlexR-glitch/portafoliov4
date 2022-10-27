@@ -1,0 +1,123 @@
+@import 'variables';
+
+.wea{
+    width: 100%;
+    height: 100vh;
+    background: $colorManifiesto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contenedor404{
+        background: $colorPrimario;
+        width: 41%;
+        height: 50%;
+        border-radius: 1rem;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        box-shadow: .5rem .6rem 1.5rem;
+        .titular404{
+            width: 100%;
+            height: 18%;
+            background: $blancoPrim;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .error{
+                width: 80%;
+                padding: .7rem 0 0 1.5rem;
+                font-family: $tipoPrincipal;
+            }
+            .fa-solid{
+                width: 2.5rem;
+                height: 2.5rem; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: .5rem 1rem 0 0;
+                font-size: 2rem;
+                color: $blancoPrim;
+                background: $colorPrimario;
+                border-radius: 3rem;
+            }
+        }
+        .engranaje{
+            width: 100%;
+            height: 82%;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            .imgRef1{
+                width: 11rem;
+                height: 11rem;
+                position: absolute;
+                bottom: 3.3rem;
+                left:5rem;
+            }
+            .imgRef2{
+                width: 11rem;
+                height: 11rem;
+                position: absolute;
+                bottom: 4.5rem;
+                right: 5.9rem;
+            }
+        }
+    }
+}
+
+
+//controladores de animaciones
+
+@media (prefers-reduced-motion: no-preference){
+    .close{
+        animation: close-rotation infinite 5s linear alternate-reverse;
+    }
+    .contenedor404{
+        animation: contenedor404-move infinite 2s ease-in-out alternate-reverse;
+    }
+    .imgRef1{
+        animation: img1-rotate infinite 15s linear;
+    }
+    .imgRef2{
+        animation: img2-rotate infinite 13.1s linear reverse;
+    }
+}
+
+
+//animaciones
+
+@keyframes close-rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes contenedor404-move{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(20px);
+    }
+}
+
+@keyframes img1-rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes img2-rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
