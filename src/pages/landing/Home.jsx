@@ -1,5 +1,5 @@
 import "./home.scss";
-import perfil from "./Recurso5.png";
+import perfil from "./ftl.png";
 import logoForm from "./logoF.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
