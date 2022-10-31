@@ -23,7 +23,6 @@ import Web from './pages/portaweb/Web';
 import Contacto from './pages/contact/Contacto';
 
 import Error from './pages/404/Error';
-
 export default function App(){
   return(
     <>
