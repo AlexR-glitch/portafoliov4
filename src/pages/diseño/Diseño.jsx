@@ -37,32 +37,32 @@ export default function Diseño() {
         {
             id: 1,
             ISrc: contIMG1,
-            descp: 'Poryecto academico con el que se practico con la creación de piezas infograficas, para lo cual se dejo tematica libre.',
+            descp: 'Proyecto académico con el que se practicó con la creación de piezas infográficas, para lo cual se dejó tematica libre.',
         },
         {
             id: 2,
             ISrc: contIMG2,
-            descp: 'Proyecto academico en el cual se trabajo un personaje para una marca exitente, para dicha actividad se debia crear una pieza publicitaria con dicho personaje.',
+            descp: 'Proyecto académico en el cual se trabajó un personaje para una marca existente, para dicha actividad se debía crear una pieza publicitaria con dicho personaje.',
         },
         {
             id: 3,
             ISrc: contIMG3,
-            descp: 'Proyecto academico en el cual se trabajo creo la portada al que nosotros dariamos nombre.',
+            descp: 'Proyecto académico en el cual se trabajó creo la portada al que nosotros daríamos nombre.',
         },
         {
             id: 4,
             ISrc: contIMG4,
-            descp: 'Proyecto academico de la materia de fotografia aplicada en la cual hariamos uso de una fotgrafia de algun producto que tubieramos en casa y la usariamos para crear una pieza publicitaria.',
+            descp: 'Proyecto académico de la materia de fotografía aplicada en la cual haríamos uso de una fotografía de algún producto que tuviéramos en casa y la usaríamos para crear una pieza publicitaria.',
         },
         {
             id: 5,
             ISrc: contIMG5,
-            descp: 'Proyecto academico en el cual se creo una marca fictisia la cual ofreceria cursos en alguna tematica de nuestro interes, para la cual se crearian una serie de artes publicitarias para la red social de Instagram.',
+            descp: 'Proyecto académico en el cual se creó una marca ficticia la cual ofrecería cursos en alguna tematica de nuestro interés, para la cual se crearían una serie de artes publicitarias para la red social de Instagram.',
         },
         {
             id: 6,
             ISrc: contIMG6,
-            descp: 'Proyecto academico en el cual se creo una marca fictisia la cual ofreceria cursos en alguna tematica de nuestro interes, para la cual se crearian una serie de artes publicitarias para la red social de Instagram.',
+            descp: 'Proyecto académico en el cual se creó una marca ficticia la cual ofrecería cursos en alguna tematica de nuestro interés, para la cual se crearían una serie de artes publicitarias para la red social de Instagram.',
         },
     ]
 
@@ -71,43 +71,43 @@ export default function Diseño() {
             id: 7,
             VSrc: 'https://www.youtube.com/embed/zSNJaWjri0w',
             titulo: 'Practica 1',
-            descripc: 'Video creado como practica academica para la clase de Diseño grafico digital 5, en el cual se hizo uso de un producto o servicio exitente, para el cual se deberia de crear una videoguia para el uso del producto o servicio.',
+            descripc: 'Video creado como practica académica para la clase de Diseño gráfico digital 5, en el cual se hizo uso de un producto o servicio existente, para el cual se debería de crear una video guía para el uso del producto o servicio.',
         },
         {
             id: 8,
             VSrc: 'https://www.youtube.com/embed/wfn22K51LNM',
             titulo: 'practica 5',
-            descripc: 'Video creado como practica academica para la clase de Diseño grafico digital 5, en el cual se hizo uso de una marca exitente, para el cual se creo un video promocional en el cual dicha marca presenta alguno de los productos que ofrecen',
+            descripc: 'Video creado como practica académica para la clase de Diseño gráfico digital 5, en el cual se hizo uso de una marca existente, para el cual se creó un video promocional en el cual dicha marca presenta alguno de los productos que ofrecen',
         },
         {
             id: 9,
             VSrc: 'https://www.youtube.com/embed/DLC1K-9utsc',
             titulo: 'Practica 4',
-            descripc: 'Video creado como pausa publicitaria para un parcial de la materia de diseño grafico digital 5, en la cual se nos pedia hace uso de marcas o productos exitentes, respetando la imagen de las marcas utilizados.',
+            descripc: 'Video creado como pausa publicitaria para un parcial de la materia de diseño gráfico digital 5, en la cual se nos pedía hace uso de marcas o productos existentes, respetando la imagen de las marcas utilizados.',
         },
         {
             id: 10,
             VSrc: 'https://www.youtube.com/embed/0duA4dvVJCw',
             titulo: 'Practica 2',
-            descripc: 'Video creado como pausa publicitaria para un parcial de la materia de diseño grafico digital 5, en la cual se debia concienciar a la audiencia sobre las normas de bioseguridad.',
+            descripc: 'Video creado como pausa publicitaria para un parcial de la materia de diseño gráfico digital 5, en la cual se debía concienciar a la audiencia sobre las normas de bioseguridad.',
         },
         {
             id: 11,
             VSrc: 'https://www.youtube.com/embed/FUhyawslSLE',
             titulo: 'Parcial 1 Video',
-            descripc: 'Video creado como pausa publicitaria para un parcial de la materia de diseño grafico digital 5, en la cual se nos pedia hace uso de marcas o productos exitentes, respetando la imagen de las marcas utilizados.',
+            descripc: 'Video creado como pausa publicitaria para un parcial de la materia de diseño gráfico digital 5, en la cual se nos pedía hace uso de marcas o productos existentes, respetando la imagen de las marcas utilizados.',
         },
         {
             id: 12,
             VSrc: 'https://www.youtube.com/embed/6KY73ontL6M',
             titulo: 'Spot 3 Parcial DGDV',
-            descripc: 'Video creado como pausa publicitaria para un parcial de la materia de diseño grafico digital 5, en la cual se debia concienciar a la audiencia sobre las normas de bioseguridad.',
+            descripc: 'Video creado como pausa publicitaria para un parcial de la materia de diseño gráfico digital 5, en la cual se debía concienciar a la audiencia sobre las normas de bioseguridad.',
         },
         {
             id: 13,
             VSrc: 'https://www.youtube.com/embed/To9Cp-ggu4E',
             titulo: 'Spot Parcial 1 Video',
-            descripc: 'Video creado como pausa publicitaria para un parcial de la materia de diseño grafico digital 5, en la cual se nos pedia hace uso de marcas o productos exitentes, respetando la imagen de las marcas utilizados.',
+            descripc: 'Video creado como pausa publicitaria para un parcial de la materia de diseño gráfico digital 5, en la cual se nos pedía hace uso de marcas o productos existentes, respetando la imagen de las marcas utilizados.',
         },
     ]
 
@@ -135,7 +135,7 @@ export default function Diseño() {
 
                 <div className='titulo' data-aos="zoom-in">
                     <h1 className='cabezera'>Diseño</h1>
-                    <p className='contexto'>En esta pagina se recopilan algunos de mis trabajos academicos que he realizado a lo largo de mi carrera universitaria, algunos de los trabajos son piezas graficas y otros son contenido audiovisual.</p>
+                    <p className='contexto'>En esta página se recopilan algunos de mis trabajos académicos que he realizado a lo largo de mi carrera universitaria, algunos de los trabajos son piezas gráficas y otros son contenido audiovisual.</p>
                 </div>
 
                 <div className={view ? "view Show" : "view"}>
@@ -149,7 +149,6 @@ export default function Diseño() {
                     <i className="fa-solid fa-circle-xmark" onClick={() => setvision(false)}></i>
                     <p className='textDesc'>{text}</p>
                 </div>
-
 
                 <div className='contenedorGaleria'>
                     <Boton className='Boton' />
@@ -175,3 +174,5 @@ export default function Diseño() {
         </>
     )
 }
+
+

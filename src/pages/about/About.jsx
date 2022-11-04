@@ -29,14 +29,15 @@ export default function About(){
                 <div className="CCTexto">
                     <h1 className="CTitular" data-aos="fade-right">Sobre mí</h1>
                     <p className="CCCuerpo" data-aos="fade-right">
-                        Mi nombre es <strong>René Rivera</strong> soy estudiante de ultimo ciclo de la carrera de <strong>Diseño grafico web multimedia</strong>, durante mis estudios universitarios me he interesado por ciertas areas profecionales como la edicion de <strong>fotografias</strong>, <strong>videos</strong> con fines ludicos o profesionales, asi como en la <strong>programacion de sitios web</strong>, haciendo uso de lenguajes de programación y tecnologías como React Js.<br/><br/>
+                    de la carrera de <strong> Diseño gráfico web multimedia </strong>, durante mis estudios universitarios me he interesado por ciertas áreas profesionales como la edición de <strong> fotografías </strong>, <strong> videos </strong> con fines lúdicos o profesionales, así como en la <strong> programación de sitios web </strong>, haciendo uso de lenguajes de programación y tecnologías como React Js.<br/><br/>
 
-                        Mis areas de <strong>conocimiento</strong> y <strong>experiencia</strong> son:<br/><br/>
+                    Mis áreas de <strong> conocimiento </strong> y <strong> experiencia </strong> son:<br/><br/>
+
                     </p>
                     <div className='container_stats'>
                         <section className="stats" data-aos="fade-right">
                             <article className="card">
-                                <h2 className='card-title' >Programas de edicion</h2>
+                                <h2 className='card-title' >Programas de edición</h2>
                                 <h6 className='label'>Años de experiencia</h6>
                                 <div className='skillYears'>
                                     <span className='start'>0</span>

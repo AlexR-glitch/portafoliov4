@@ -39,14 +39,14 @@ export default function Web() {
 
                 <div className='titulo' data-aos="zoom-in">
                     <h1 className='cabezera'>Diseño Web</h1>
-                    <p className='contexto'>En esta pagina se encuentran algunos proyectos academicos que he realizado a lo largo de mi carrera universitaria.</p>
+                    <p className='contexto'>En esta página se encuentran algunos proyectos académicos que he realizado a lo largo de mi carrera universitaria.</p>
                 </div>
 
                 <div className='ContenedorSeccion' data-aos="fade-up">
                     <Slide1 className='sliderCuerpo' />
                     <div className='descripcion'>
                         <h1 className='tituloSeccion'>Pagina de abogados</h1>
-                        <p className='CuerpoSeccion'>Este proyecto fue desarrollado como un ejercicio academico con la finalidad de dar una solucion a la necesidad de una pagina web para una firma de abogados, para que estos ofrescan sus servicios de una manera mas rapida y comoda para sus clientes.</p>
+                        <p className='CuerpoSeccion'>Este proyecto fue desarrollado como un ejercicio académico con la finalidad de dar una solución a la necesidad de una página web para una firma de abogados, para que estos ofrezcan sus servicios de una manera más rápida y cómoda para sus clientes.</p>
                     </div>
                 </div>
 
@@ -54,7 +54,7 @@ export default function Web() {
                     <Slide2 className='sliderCuerpo' />
                     <div className='descripcion'>
                         <h1 className='tituloSeccion'>Agencia de viajes</h1>
-                        <p className='CuerpoSeccion'> Proyecto desarrollado como examen parcial para una agencia de viajes en la cual se ofrecen diferentes destinos alrededor del mundo, como parte de la actividad se le agrego un formulario de contacto para facilitar la comunicacion cliente/agencia.</p>
+                        <p className='CuerpoSeccion'> Proyecto desarrollado como examen parcial para una agencia de viajes en la cual se ofrecen diferentes destinos alrededor del mundo, como parte de la actividad se le agrego un formulario de contacto para facilitar la comunicación cliente/agencia.</p>
                     </div>
                 </div>
 
@@ -62,7 +62,7 @@ export default function Web() {
                     <Slide3 className='sliderCuerpo' />
                     <div className='descripcion'>
                         <h1 className='tituloSeccion'>Web Maker</h1>
-                        <p className='CuerpoSeccion'>Propuesta de diseño para un proyecto emprendedor de un amigo, en el que se ofrecian servicios de diseño publicitario, diseño web, soporte tecnico y e-comerce.Con la idea de brindar soluciones creativas para las necesidades de otros emprendedores</p>
+                        <p className='CuerpoSeccion'>Propuesta de diseño para un proyecto emprendedor de un amigo, en el que se ofrecían servicios de diseño publicitario, diseño web, soporte técnico y e-comerce. Con la idea de brindar soluciones creativas para las necesidades de otros emprendedores</p>
                     </div>
                 </div>
 
@@ -70,10 +70,11 @@ export default function Web() {
                     <Slide4 className='sliderCuerpo' />
                     <div className='descripcion'>
                         <h1 className='tituloSeccion'>Tienda de zapatos</h1>
-                        <p className='CuerpoSeccion'>Proyecto realizado como actividad academica para una tienda de zapatos que quiere ofrecer sus porductos mediante una pagina web, como parte de la propuesta se trabajo el catalogo, asi como previsualizaciones de producto.</p>
+                        <p className='CuerpoSeccion'>Proyecto realizado como actividad académica para una tienda de zapatos que quiere ofrecer sus productos mediante una página web, como parte de la propuesta se trabajó el catálogo, así como previsualizaciones de producto.</p>
                     </div>
                 </div>
             </div>
         </>
     )
 }
+

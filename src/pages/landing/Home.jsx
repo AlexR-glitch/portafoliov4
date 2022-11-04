@@ -36,7 +36,7 @@ export default function Home() {
                 <div className="Container about">
                     <h1 className="titular" data-aos="fade-down" data-aos-once="true" data-aos-mirror="false">Sobre este portafolio</h1><br />
                     <p className="cuerpo" data-aos="fade-right">
-                        El concepto detrás de este portafolio es <strong>ENCODE</strong> que significa <strong>CODIFICACIÓN</strong> nace a partir de que en la carrera que estudio está enfocada a el diseño de páginas web y en la edición de contenido multimedia, este concepto está relacionado tanto a la programación web que es la combinación de lenguajes de programación y también está relacionado con los códecs en los que se pueden trabajar proyectos audiovisuales, este concepto se verá reflejado en el uso de los lenguajes de programación y mediante el uso de materiales multimedia para que la apariencia visual del portafolio refleje la profesionalidad de mi trabajo.
+                        El concepto detrás de este portafolio es <strong>ENCODE</strong> que significa <strong>CODIFICACIÓN</strong>, la idea surge por la carrera que estudio, siendo Diseño gráfico web así como en la edición de contenido multimedia. Este concepto está relacionado tanto a la programación web combinación de lenguajes de programación- y también está relacionado con los códecs en los que se pueden trabajar proyectos audiovisuales, este concepto se verá reflejado en el uso de los lenguajes de programación y mediante el uso de materiales multimedia para que la apariencia visual del portafolio refleje la profesionalidad de mi trabajo.
                     </p>
                 </div>
                 <img className="logoF" src={logoForm} data-aos="zoom-in" alt='logo'></img>
