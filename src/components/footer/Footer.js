@@ -8,7 +8,7 @@ export default function Footer(){
         <div className="footer">
             <div className="ContEnlaces">
                 <p className="derechos">
-                    Derechos reservados {Year} | <strong> Portafolio profesional y Academico </strong> | René Rivera
+                    Derechos reservados {Year} | <strong> Portafolio profesional y Académico </strong> | René Rivera
                 </p>
             </div>
         </div>
