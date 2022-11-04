@@ -29,7 +29,7 @@ export default function About(){
                 <div className="CCTexto">
                     <h1 className="CTitular" data-aos="fade-right">Sobre mí</h1>
                     <p className="CCCuerpo" data-aos="fade-right">
-                    de la carrera de <strong> Diseño gráfico web multimedia </strong>, durante mis estudios universitarios me he interesado por ciertas áreas profesionales como la edición de <strong> fotografías </strong>, <strong> videos </strong> con fines lúdicos o profesionales, así como en la <strong> programación de sitios web </strong>, haciendo uso de lenguajes de programación y tecnologías como React Js.<br/><br/>
+                    Mi nombre es <strong>René Rivera</strong> soy estudiante de último ciclo de la carrera de <strong> Diseño gráfico web multimedia </strong>, durante mis estudios universitarios me he interesado por ciertas áreas profesionales como la edición de <strong> fotografías </strong>, <strong> videos </strong> con fines lúdicos o profesionales, así como en la <strong> programación de sitios web </strong>, haciendo uso de lenguajes de programación y tecnologías como React Js.<br/><br/>
 
                     Mis áreas de <strong> conocimiento </strong> y <strong> experiencia </strong> son:<br/><br/>
 
