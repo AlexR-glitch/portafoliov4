@@ -1,7 +1,7 @@
 @import 'variables';
 
 .cabeza{
-    height: 100vh;
+    height: 100vh !important;
     width: 100%;
     background: url(./BgPrincipal.png) !important;
     background-size: cover;
@@ -11,12 +11,14 @@
     align-items: center;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    .img{
+    overflow: hidden !important;
+    .imgBG{
         width: auto;
         height: 100%;
         filter: grayscale(1);
         background: none !important;
+        position: relative;
+        bottom: 0;
     }
     .encabezado{
         padding: .5rem .8rem .5rem .8rem;
@@ -106,9 +108,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .img{
+        .imgBG{
+            width: auto;
             z-index: 60;
-            position: absolute;
+            position: absolute!important;
+            bottom: 0;
         }
         .encabezado{
             z-index: 70;
@@ -159,9 +163,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .img{
+        overflow: hidden;
+        .imgBG{
+            width: auto;
+            max-width: 720px;
+            height: 90%;
             z-index: 60;
             position: absolute;
+            bottom: 0;
         }
         .encabezado{
             z-index: 70;

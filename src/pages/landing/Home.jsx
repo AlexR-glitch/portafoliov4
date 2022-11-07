@@ -26,7 +26,7 @@ export default function Home() {
     return (
         <>
             <header className="Container cabeza">
-                <img data-aos="fade-left" src={perfil} className="img" alt='imagen'></img>
+                <img src={perfil} className="imgBG" alt='imagen'></img>
                 <div className="Container encabezado" data-aos="fade-right">
                     <h1 className="title" data-aos="fade-up">René Rivera</h1>
                     <h2 className="sub-title" data-aos="fade-up">Diseñador gráfico web</h2>
