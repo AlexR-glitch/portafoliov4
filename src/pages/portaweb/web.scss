@@ -75,6 +75,14 @@
 
 @media screen and (max-width: 768px){
     .ContenedorWeb{
+        .titulo{
+            .cabezera{
+                font-size: 2.5rem;
+            }
+            .contexto{
+                font-size: 1rem;
+            }
+        }
         .ContenedorSeccion{
             width: 100%;
             flex-direction: column;

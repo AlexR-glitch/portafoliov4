@@ -9,6 +9,7 @@
     align-items: center;
     margin: 0;
     padding: .5rem;
+    flex-direction: column;
     .ContEnlaces{
         width: 80%;
         display: flex;
@@ -21,6 +22,17 @@
             color: $blancoPrim;
             font-family: $tipoSecundario;
             margin: 0;
+            text-align: center;
+        }
+    }
+
+    .RRSS{
+        font-family: $tipoPrincipal;
+        color: $blancoPrim;
+        .RS{
+            text-decoration: none;
+            color: $blancoPrim;
+            font-size: 1.1rem;
         }
     }
 }

@@ -108,18 +108,21 @@
 
 @media screen and (max-width: 768px) {
     .contacto{
+        width: 100%;
+        margin: 0;
+        padding: 60px 16px 16px 16px;
         .contenedorContacto{
             flex-direction: column;
             height: 80%;
-            width: 75%;
-            padding: .5rem 1rem;
+            width: 90%;
+            padding: .5rem .5rem;
             justify-content: space-around;
             img{
                 width: 150px;
                 height: 150px;
             }
             .contenedorFormulario{
-                width: 80%;
+                width: 90%;
             }
         }
         .contactoCabeza{

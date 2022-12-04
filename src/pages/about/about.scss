@@ -93,28 +93,34 @@
 
 @media screen and (max-width: 768px){
     .CCuerpo{
-        height: 100vh;
-        padding-top: 70px;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        padding-top: 2rem;
+        overflow: hidden;
         .CCTexto{
             padding: 3rem 1.5rem 1.5rem 1.5rem;
             display: flex;
             .CTitular{
-                font-size: 4.5rem;
+                font-size: 3rem;
             }
             .CCCuerpo{
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 strong{
-                    font-size: 1.6rem;
+                    font-size: 1.2rem;
                 }
             }
         }
     }
     
     .container_stats{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 825px;
         .stats{
-            width: 45%;
-            height: 425px;
-            padding: .2rem;
+            width: 90%;
+            height: fit-content;
+            padding: .5rem;
             .card{
                 .card-title{
                     font-size: 2rem;
